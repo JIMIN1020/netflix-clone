@@ -25,7 +25,7 @@ export default function Banner() {
       ].id;
 
     // 더 상세한 정보 가져오기
-    const { data: movieDetail } = await axios.get(`movie/${movieId}`, {
+    const { data: movieDetail } = await axios.get(`/movie/${movieId}`, {
       params: { append_to_response: "videos" },
     });
 
